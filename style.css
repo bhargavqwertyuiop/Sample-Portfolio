@@ -162,6 +162,40 @@ body {
     max-width: 500px;
 }
 
+.hero-specialties {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.specialty-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    background: rgba(0, 212, 255, 0.1);
+    border-radius: 25px;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.specialty-item:hover {
+    background: rgba(0, 212, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.specialty-item i {
+    color: #00d4ff;
+    font-size: 1rem;
+}
+
+.specialty-item span {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
 .hero-buttons {
     display: flex;
     gap: 1rem;
@@ -374,6 +408,37 @@ body {
     transform: translateY(-2px);
 }
 
+.featured-skill {
+    position: relative;
+    background: rgba(0, 212, 255, 0.08) !important;
+    border: 2px solid rgba(0, 212, 255, 0.3) !important;
+}
+
+.featured-skill::before {
+    background: linear-gradient(45deg, rgba(0, 212, 255, 0.1), rgba(0, 153, 204, 0.1)) !important;
+    opacity: 1 !important;
+}
+
+.specialization-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: linear-gradient(45deg, #00d4ff, #0099cc);
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 212, 255, 0.3);
+}
+
+.skill-tag.expert {
+    background: rgba(0, 212, 255, 0.2);
+    color: #00d4ff;
+    border: 1px solid rgba(0, 212, 255, 0.4);
+    font-weight: 600;
+}
+
 /* Experience Section */
 .experience {
     padding: 100px 0;
@@ -486,6 +551,74 @@ body {
     position: absolute;
     left: 0;
     font-size: 0.8rem;
+}
+
+.timeline-dot.active {
+    background: linear-gradient(45deg, #00d4ff, #0099cc);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(0, 212, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    }
+}
+
+.timeline-content.featured {
+    background: rgba(0, 212, 255, 0.08);
+    border: 2px solid rgba(0, 212, 255, 0.3);
+    position: relative;
+}
+
+.experience-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: linear-gradient(45deg, #00d4ff, #0099cc);
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(0, 212, 255, 0.3);
+}
+
+.timeline-date.current {
+    color: #00d4ff !important;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tech-item {
+    background: rgba(0, 212, 255, 0.1);
+    color: #00d4ff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.tech-item.primary {
+    background: rgba(0, 212, 255, 0.2);
+    border-color: rgba(0, 212, 255, 0.4);
+    font-weight: 600;
 }
 
 /* Education Section */
@@ -650,6 +783,37 @@ body {
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 500;
+}
+
+.featured-project {
+    position: relative;
+    background: rgba(0, 212, 255, 0.08) !important;
+    border: 2px solid rgba(0, 212, 255, 0.3) !important;
+    transform: scale(1.02);
+}
+
+.featured-project:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.project-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(45deg, #00d4ff, #0099cc);
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 212, 255, 0.3);
+    z-index: 3;
+}
+
+.project-tech .primary-tech {
+    background: rgba(0, 212, 255, 0.2);
+    border: 1px solid rgba(0, 212, 255, 0.4);
+    font-weight: 600;
 }
 
 /* Contact Section */
@@ -899,6 +1063,19 @@ body {
 
     .hero-buttons {
         justify-content: center;
+    }
+
+    .hero-specialties {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .specialty-item {
+        padding: 0.6rem 1rem;
+    }
+
+    .specialty-item span {
+        font-size: 0.8rem;
     }
 }
 

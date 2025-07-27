@@ -4,217 +4,505 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyWebsite</title>
+    <title>Bhargav Teja - DevOps Engineer | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/30cad4b877.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.jpg" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-
-            </nav>
-            <div class="header-text">
-                <p>Web Developer</p>
-                <h1>Hi, I'm <span>Bhargav Teja</span><br> From India</h1>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Bhargav Teja</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <!------------------------------------------About------------------------------------------------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.jpg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, exercitationem numquam! Et
-                        doloribus velit amet at repellat, molestiae quia. Aperiam veniam obcaecati magnam sed explicabo
-                        adipisci maxime iste vero praesentium. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Iure repudiandae expedita assumenda qui culpa neque esse asperiores necessitatibus molestias.
-                        Illum hic deserunt vero! Voluptatem veniam inventore molestias doloribus repellat aut!
-                    </p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hello, I'm <span class="highlight">Bhargav Teja</span></h1>
+                    <h2>Quadient Inspire Specialist & DevOps Engineer</h2>
+                    <p>Programmer Analyst Trainee at Cognizant specializing in Document Automation and Customer Communication Management with extensive DevOps expertise</p>
+                    <div class="hero-specialties">
+                        <div class="specialty-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Quadient Inspire Expert</span>
+                        </div>
+                        <div class="specialty-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>DevOps & CI/CD</span>
+                        </div>
+                        <div class="specialty-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Infrastructure Automation</span>
+                        </div>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/user.jpg" alt="Bhargav Teja">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Get to know more about my background and journey</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate DevOps Engineer and Programmer Analyst Trainee at Cognizant with a strong foundation in cloud technologies and automation. I completed my Bachelor of Engineering in Computer Science from BMS Institute of Technology, Bangalore.</p>
+                    
+                    <p>My journey in technology has been focused on bridging the gap between development and operations, with hands-on experience in modern DevOps tools and practices. I'm particularly interested in Infrastructure as Code, CI/CD pipelines, and cloud automation.</p>
+                    
+                    <p>Having started as an intern at Cognizant, I've grown to understand the importance of scalable, reliable systems and continuous improvement in software delivery processes.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Technologies Mastered</p>
+                        </div>
+                        <div class="stat">
+                            <h3>Multiple</h3>
+                            <p>Projects Delivered</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/user.jpg" alt="Bhargav Teja">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category featured-skill">
+                    <h3><i class="fas fa-file-alt"></i> Document Automation & CCM</h3>
+                    <div class="specialization-badge">Current Specialization</div>
+                    <div class="skill-items">
+                        <span class="skill-tag expert">Quadient Inspire</span>
+                        <span class="skill-tag">Document Generation</span>
+                        <span class="skill-tag">Customer Communications</span>
+                        <span class="skill-tag">Template Design</span>
+                        <span class="skill-tag">Workflow Automation</span>
+                        <span class="skill-tag">Interactive Forms</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag expert">Azure DevOps</span>
+                        <span class="skill-tag expert">Docker</span>
+                        <span class="skill-tag expert">Kubernetes</span>
+                        <span class="skill-tag expert">Jenkins</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Ansible</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code-branch"></i> Version Control & CI/CD</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag expert">Git</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag expert">Azure Pipelines</span>
+                        <span class="skill-tag expert">Jenkins Pipeline</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Development & Infrastructure</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Shell Scripting</span>
+                        <span class="skill-tag">PowerShell</span>
+                        <span class="skill-tag">Infrastructure as Code</span>
+                        <span class="skill-tag">Configuration Management</span>
+                        <span class="skill-tag">Microservices</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Professional Experience</h2>
+                <p>My journey in the tech industry</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot active"></div>
+                    <div class="timeline-content featured">
+                        <h3>Programmer Analyst Trainee - Quadient Inspire Specialist</h3>
+                        <h4>Cognizant Technology Solutions</h4>
+                        <span class="timeline-date current">April 2025 - Present</span>
+                        <div class="experience-badge">Current Role</div>
+                        <p>Specialized in Quadient Inspire platform development and customer communication management solutions. Leading digital transformation initiatives and creating innovative document generation workflows.</p>
                         <ul>
-                            <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
-                            <li><span>Web Development</span><br>Web Development</li>
-                            <li><span>App Development</span><br>App Development</li>
-
+                            <li>Designing and implementing advanced Quadient Inspire workflows for enterprise clients</li>
+                            <li>Developing custom templates and interactive forms for customer communications</li>
+                            <li>Optimizing document production performance and scalability</li>
+                            <li>Training team members on Quadient Inspire best practices and methodologies</li>
+                            <li>Collaborating with cross-functional teams to deliver client-specific solutions</li>
                         </ul>
+                        <div class="tech-stack">
+                            <span class="tech-item primary">Quadient Inspire</span>
+                            <span class="tech-item">Document Automation</span>
+                            <span class="tech-item">Customer Communications</span>
+                            <span class="tech-item">Workflow Design</span>
+                        </div>
                     </div>
-                    <div class="tab-contents" id="experience">
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>DevOps Engineer - Infrastructure & Automation</h3>
+                        <h4>Cognizant Technology Solutions</h4>
+                        <span class="timeline-date">July 2024 - March 2025</span>
+                        <p>Focused on DevOps automation, CI/CD pipeline development, and cloud infrastructure management. Implemented modern DevOps practices to improve software delivery efficiency and system reliability.</p>
                         <ul>
-                            <li><span>2020-2023</span><br>Designing Web/App Interfaces</li>
-                            <li><span>2023-2024</span><br>Web Development</li>
-                            <li><span>2024</span><br>App Development</li>
-
+                            <li>Architected and maintained robust CI/CD pipelines using Jenkins and Azure DevOps</li>
+                            <li>Implemented Infrastructure as Code (IaC) solutions with Terraform and Ansible</li>
+                            <li>Orchestrated containerized applications using Docker and Kubernetes</li>
+                            <li>Automated deployment processes reducing deployment time by 70%</li>
+                            <li>Monitored and optimized cloud infrastructure performance and costs</li>
+                            <li>Mentored junior developers on DevOps best practices and tools</li>
                         </ul>
+                        <div class="tech-stack">
+                            <span class="tech-item">Jenkins</span>
+                            <span class="tech-item">Azure DevOps</span>
+                            <span class="tech-item">Docker</span>
+                            <span class="tech-item">Kubernetes</span>
+                            <span class="tech-item">Terraform</span>
+                            <span class="tech-item">Ansible</span>
+                        </div>
                     </div>
-                    <div class="tab-contents" id="education">
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Software Engineering Intern</h3>
+                        <h4>Cognizant Technology Solutions</h4>
+                        <span class="timeline-date">2023 - June 2024</span>
+                        <p>Gained comprehensive experience in software development lifecycle, version control, and collaborative development practices. Built strong foundation in enterprise software development.</p>
                         <ul>
-                            <li><span>2003-2018</span><br>RVSR School Navanagar</li>
-                            <li><span>2018-2020</span><br>Sir MV PU College</li>
-                            <li><span>2020-2024</span><br>BMS Institute Of Technology Bengaluru</li>
-
+                            <li>Mastered Git version control and collaborative development workflows</li>
+                            <li>Contributed to multiple client projects using agile methodologies</li>
+                            <li>Developed proficiency in software testing and quality assurance</li>
+                            <li>Participated in code reviews and technical documentation</li>
+                            <li>Built foundation knowledge in cloud platforms and DevOps concepts</li>
                         </ul>
+                        <div class="tech-stack">
+                            <span class="tech-item">Git</span>
+                            <span class="tech-item">Agile</span>
+                            <span class="tech-item">Software Testing</span>
+                            <span class="tech-item">Code Review</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!---------------------------Services-------------------------------------------------------------->
-
-    <div id="services">
+    <!-- Education Section -->
+    <section id="education" class="education">
         <div class="container">
-            <h1 class="subtitle">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h2>Web Designer</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus nulla repellat dolores quis
-                        quos hic veniam minima enim quibusdam quasi, velit molestias corporis libero, dolore architecto
-                        sunt! Fugit, excepturi reprehenderit.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fas fa-crop-alt"></i>
-
-                    <h2>UI/UX Designer</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus nulla repellat dolores quis
-                        quos hic veniam minima enim quibusdam quasi, velit molestias corporis libero, dolore architecto
-                        sunt! Fugit, excepturi reprehenderit.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fas fa-app-store"></i>
-
-                    <h2>App Designer</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus nulla repellat dolores quis
-                        quos hic veniam minima enim quibusdam quasi, velit molestias corporis libero, dolore architecto
-                        sunt! Fugit, excepturi reprehenderit.</p>
-                    <a href="#">Learn More</a>
+            <div class="section-header">
+                <h2>Education</h2>
+                <p>My academic background</p>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Bachelor of Engineering</h3>
+                    <h4>Computer Science & Engineering</h4>
+                    <p class="institution">BMS Institute of Technology, Bangalore</p>
+                    <span class="education-year">2020 - 2024</span>
+                    <p>Comprehensive study of computer science fundamentals, programming languages, data structures, algorithms, and software engineering principles.</p>
                 </div>
             </div>
-
         </div>
-    </div>
+    </section>
 
-    <!------------------------------------------------------Portfolio-------------------------------------->
-    <div id="portfolio">
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
         <div class="container">
-            <h1 class="subtitle">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/w-1.jpg" alt="">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorem consectetur, molestias
-                            distinctio voluptates fugiat vero voluptate enim nobis, maxime hic accusamus autem
-                            repudiandae maiores delectus? Possimus inventore nesciunt numquam.</p>
-                        <a href="#"><i class="fa-brands fa-app-store"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/w-2.jpg" alt="">
-                    <div class="layer">
-                        <h3>Music App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorem consectetur, molestias
-                            distinctio voluptates fugiat vero voluptate enim nobis, maxime hic accusamus autem
-                            repudiandae maiores delectus? Possimus inventore nesciunt numquam.</p>
-                        <a href="#"><i class="fa-solid fa-music"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.jpg" alt="">
-                    <div class="layer">
-                        <h3>Shopping App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorem consectetur, molestias
-                            distinctio voluptates fugiat vero voluptate enim nobis, maxime hic accusamus autem
-                            repudiandae maiores delectus? Possimus inventore nesciunt numquam.</p>
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
-                </div>
-
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Some of my notable work and contributions</p>
             </div>
-            <a href="#" class="btn">See More</a>
-        </div>
-    </div>
-
-    <!-------------------------------CONTACT-------------------------->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="subtitle">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i>contact@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+919999999999</p>
-                    <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter"></i></a>
-                        <a href=""><i class="fa-brands fa-google"></i></a>
-
+            <div class="projects-grid">
+                <div class="project-card featured-project">
+                    <div class="project-image">
+                        <img src="images/work-1.jpg" alt="Quadient Inspire Solution">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="project-badge">Featured Project</div>
                     </div>
-                    <a onclick="window.print()" class="btn btn2">Download CV</a>
+                    <div class="project-content">
+                        <h3>Enterprise Document Automation Platform</h3>
+                        <p>Developed a comprehensive customer communication management solution using Quadient Inspire, automating document generation workflows for enterprise clients and reducing processing time by 85%.</p>
+                        <div class="project-tech">
+                            <span class="primary-tech">Quadient Inspire</span>
+                            <span>Document Automation</span>
+                            <span>Template Design</span>
+                            <span>Workflow Engine</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/work-2.jpg" alt="CI/CD Pipeline">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Automated CI/CD Pipeline</h3>
+                        <p>Designed and implemented a complete CI/CD pipeline using Jenkins and Azure DevOps for automated testing, building, and deployment of applications, improving deployment frequency by 300%.</p>
+                        <div class="project-tech">
+                            <span>Jenkins</span>
+                            <span>Azure DevOps</span>
+                            <span>Docker</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/work-3.jpg" alt="Infrastructure as Code">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cloud Infrastructure Automation</h3>
+                        <p>Developed infrastructure automation scripts using Terraform and Ansible for cloud resource provisioning and configuration management, reducing infrastructure setup time by 90%.</p>
+                        <div class="project-tech">
+                            <span>Terraform</span>
+                            <span>Ansible</span>
+                            <span>Kubernetes</span>
+                            <span>Azure Cloud</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Let's connect and discuss opportunities</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>bhargavteja@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91 9999999999</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Bangalore, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <a href="#" class="btn btn-primary download-cv">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+                <div class="contact-form">
+                    <form name="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>Copyright @ Bhargav Teja</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Bhargav Teja. All rights reserved.</p>
+                <p>DevOps Engineer | Cloud Enthusiast | Problem Solver</p>
+            </div>
         </div>
-    </div>
+    </footer>
+
+    <!-- JavaScript -->
     <script>
-        var tablinks = document.getElementsByClassName("tab-links")
-        var tabcontents = document.getElementsByClassName("tab-contents")
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
 
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link")
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
 
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxDDUys0hoQp-KK0lOuHZD3NUxDMsdK7na567-556kG1CZoEXGael_PfCJP1ZiFJgHuEA/exec'
-        const form = document.forms['submit-to-google-sheet']
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
-        })
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add active class to navigation links on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Form submission
+        const form = document.forms['contact-form'];
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Message sent successfully!');
+            form.reset();
+        });
+
+        // Add scroll animation for elements
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.skill-category, .timeline-item, .project-card, .education-card').forEach(el => {
+            observer.observe(el);
+        });
     </script>
 </body>
 

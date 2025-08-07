@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhargav Teja - DevOps Engineer | Portfolio</title>
+    <title>Bhargav Teja - Aspiring DevOps Engineer | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,19 @@
 </head>
 
 <body>
+    <!-- 3D Background Elements -->
+    <div class="particles-bg" id="particles"></div>
+    <div class="cube-container">
+        <div class="cube">
+            <div class="cube-face"></div>
+            <div class="cube-face"></div>
+            <div class="cube-face"></div>
+            <div class="cube-face"></div>
+            <div class="cube-face"></div>
+            <div class="cube-face"></div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -21,22 +34,22 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link" data-text="Home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#about" class="nav-link" data-text="About">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#experience" class="nav-link" data-text="Experience">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -90,7 +103,7 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a passionate DevOps Engineer and Programmer Analyst Trainee at Cognizant with a strong foundation in cloud technologies and automation. I completed my Bachelor of Engineering in Computer Science from BMS Institute of Technology, Bangalore.</p>
+                    <p>I'm a passionate Aspiring DevOps Engineer and Programmer Analyst Trainee at Cognizant with a strong foundation in cloud technologies and automation. I completed my Bachelor of Engineering in Computer Science from BMS Institute of Technology, Bangalore.</p>
                     
                     <p>My journey in technology has been focused on bridging the gap between development and operations, with hands-on experience in modern DevOps tools and practices. I'm particularly interested in Infrastructure as Code, CI/CD pipelines, and cloud automation.</p>
                     
@@ -98,7 +111,7 @@
                     
                     <div class="about-stats">
                         <div class="stat">
-                            <h3>2+</h3>
+                            <h3>1+</h3>
                             <p>Years Experience</p>
                         </div>
                         <div class="stat">
@@ -135,7 +148,7 @@
                         <span class="skill-tag">Customer Communications</span>
                         <span class="skill-tag">Template Design</span>
                         <span class="skill-tag">Workflow Automation</span>
-                        <span class="skill-tag">Interactive Forms</span>
+                       <!-- <span class="skill-tag">Interactive Forms</span> -->
                     </div>
                 </div>
                 <div class="skill-category">
@@ -217,7 +230,7 @@
                             <li>Orchestrated containerized applications using Docker and Kubernetes</li>
                             <li>Automated deployment processes reducing deployment time by 70%</li>
                             <li>Monitored and optimized cloud infrastructure performance and costs</li>
-                            <li>Mentored junior developers on DevOps best practices and tools</li>
+                         <!-- <li>Mentored junior developers on DevOps best practices and tools</li> -->
                         </ul>
                         <div class="tech-stack">
                             <span class="tech-item">Jenkins</span>
@@ -246,7 +259,7 @@
                         <div class="tech-stack">
                             <span class="tech-item">Git</span>
                             <span class="tech-item">Agile</span>
-                            <span class="tech-item">Software Testing</span>
+                         <!--   <span class="tech-item">Software Testing</span> -->
                             <span class="tech-item">Code Review</span>
                         </div>
                     </div>
@@ -417,7 +430,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Bhargav Teja. All rights reserved.</p>
+                <p>&copy; 2025 Bhargav Teja. All rights reserved.</p>
                 <p>DevOps Engineer | Cloud Enthusiast | Problem Solver</p>
             </div>
         </div>
@@ -425,6 +438,51 @@
 
     <!-- JavaScript -->
     <script>
+        // Generate particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (Math.random() * 20 + 20) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        createParticles();
+
+        // 3D Tilt Effect on Mouse Move
+        document.addEventListener('mousemove', (e) => {
+            const cards = document.querySelectorAll('.skill-category, .project-card, .education-card');
+            const x = e.clientX;
+            const y = e.clientY;
+            
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const cardX = rect.left + rect.width / 2;
+                const cardY = rect.top + rect.height / 2;
+                
+                const angleX = (y - cardY) / 30;
+                const angleY = (cardX - x) / 30;
+                
+                if (Math.abs(x - cardX) < rect.width && Math.abs(y - cardY) < rect.height) {
+                    card.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) translateZ(10px)`;
+                }
+            });
+        });
+
+        // Reset card transform on mouse leave
+        document.addEventListener('mouseleave', () => {
+            const cards = document.querySelectorAll('.skill-category, .project-card, .education-card');
+            cards.forEach(card => {
+                card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
+            });
+        });
+
         // Mobile Navigation Toggle
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.nav-menu');
